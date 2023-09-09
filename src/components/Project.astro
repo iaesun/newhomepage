@@ -2,11 +2,11 @@
 export interface Props {
   repo: string;
   desc: string;
+  name: string;
   icon?: string;
 }
 
 const { icon, repo, desc } = Astro.props;
-const name = repo.split("/")[1];
 ---
 
 <a
